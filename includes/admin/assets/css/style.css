@@ -1,0 +1,277 @@
+#mx_builder_components_container {
+    border: 2px solid #e5e4e8;
+    margin: 10px 0px;
+    padding: 10px;
+}
+#mx_builder_add_button_wrap {
+    text-align: center;
+}
+#mx_builder_add_button {
+    
+}
+
+/**/
+#mx_builder_list_of_items_box {
+    border: 1px solid #e5e4e8;
+    margin: 5px;
+    padding: 5px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f7f8ff;
+}
+#mx_builder_list_of_items_box > div {
+    border: 2px solid #e5e4e8;
+    padding: 20px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #fbffef;
+}
+#mx_builder_list_of_items_box > div:hover {
+    background-color: #ebf5cd;
+}
+
+/**/
+.mx_builder_build_stream_element {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    padding: 5px;
+    background-color: #fafafa;
+}
+.mx_builder_build_stream_element_header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 10px 6px;
+    background: #f7f7f7;
+    color: #999;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+}
+.mx_builder_build_stream_element_management {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+.mx_builder_build_stream_element_management > span {
+    padding: 5px;
+    margin: 0px 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.mx_builder_build_stream_element_management > span:hover {
+    background: #fafafa;
+}
+.mx_builder_button_none {
+    display: none !important;
+}
+.mx_builder_build_stream_element_body {
+    overflow: hidden;
+}
+.mx_builder_build_stream_element_body img {
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+}
+.mx-builder-editable-img {
+    cursor: pointer;
+    border: 1px solid #fafafa;
+}
+.mx-builder-editable-img:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mx_builder_b_s_e_drop_item {
+    font-size: 0;
+}
+.mx_builder_b_s_e_drop_item:before {
+    font-family: 'FontAwesome';
+    content: "\f107";
+    display: block;
+    padding: 4px;
+    font-size: 20px;
+}
+.mx_builder_b_s_e_lift_item {
+    font-size: 0;
+}
+.mx_builder_b_s_e_lift_item:before {
+    font-family: 'FontAwesome';
+    content: "\f106";
+    display: block;
+    padding: 4px;
+    font-size: 20px;
+}
+
+/*effects*/
+
+.mx_builder_effect_move_to_bottom .mx_builder_build_stream_element_header,
+.mx_builder_effect_move_to_top .mx_builder_build_stream_element_header {
+    background: #dff3e0 !important;
+}
+.mx_builder_effect_move_to_top {
+    position: absolute;
+    margin-top: -100px;
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+    width: 95%;
+}
+.mx_builder_effect_move_to_bottom {
+    margin-top: 100px;
+    position: absolute;
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+    width: 95%;
+}
+
+/**/
+.mx_template_short_name {
+    padding: 8px 10px;
+}
+.mx_builder_build_stream_element_remove_element {
+    padding: 5px;
+    margin: 0px 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0;
+}
+.mx_builder_build_stream_element_remove_element:before {
+    font-family: 'FontAwesome';
+    content: "\f05c";
+    display: block;
+    padding: 4px;
+    font-size: 20px;
+}
+.mx_builder_build_stream_element_remove_element:hover:before {
+    color: #ce0d0d;
+}
+
+/*editor*/
+.mx_builder_text_editor_wrap,
+.mx_builder_simple_text_editor_wrap {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 77777;
+    background: rgba(104, 105, 104, 0.84);
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#mx_builder_simple_text_editor {
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+    display: block;
+    min-height: 400px;
+    height: 400px;
+}
+#wp-mx_builder_editor-wrap {
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+}
+#mx_builder_editor {
+    min-height: 400px;
+    width: 100%;
+}
+#mx_builder_editor_ifr {
+    height: 300px !important;
+}
+.mx_builder_text_editor_visible {
+    display: block;
+    text-align: center;
+}
+.mx_builder_text_editor_visible .mce-tinymce {
+    width: 100%;
+    max-width: 800px;
+    margin: 32px auto;
+}
+.mx-builder-editable-content {
+    cursor: pointer;
+    padding: 6px;
+    position: relative;
+}
+.mx-builder-editable-content p {
+    margin: 0;
+}
+.mx-builder-editable-content:hover {
+    background: #f7f7f7;
+    opacity: 0.6;
+    -webkit-transition: 0.4s all ease;
+    transition: 0.4s all ease;
+}
+.mx-builder-editable-content:hover:before {
+    font-family: 'FontAwesome';
+    content: "\f044";
+    display: block;
+    position: absolute;
+    background: #f7f7f7;
+    padding: 4px;
+    font-size: 20px;
+    left: 50%;
+    margin-left: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+.mx_builder_save_content.button-primary,
+.mx_builder_save_simple_text.button-primary {
+    margin: 40px auto;
+    float: none;
+    display: block;
+    margin-bottom: 32px;
+}
+.mx_builder_simple_text_editor_body {
+
+}
+
+/*hide textarea*/
+#post-status-info,
+#content {
+    display: none;
+}
+
+/*hide meta data field*/
+#mx_builder_data_array_builder {
+    display: none;
+}
+
+
+
+/*media*/
+@media only screen and (max-width: 800px) {
+   /* #wp-mx_builder_editor-wrap {
+        position: absolute;
+        width: 100%;
+        max-width: 800px;
+        left: 0;
+        margin-left: 0;
+    }*/
+}
